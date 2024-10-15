@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "fastapi-project"
+version = "0.1.0"
+description = ""
+authors = ["nikitakolesnik <nikita.kolesnik@simbirsoft.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+isort = "^5.13.2"
+alembic = "^1.13.1"
+mypy = "^1.8.0"
+black = "^24.2.0"
+python-dotenv = "^1.0.1"
+uvicorn = "^0.27.1"
+psycopg2-binary = "^2.9.9"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+bcrypt = "^4.1.2"
+pydantic-settings = "^2.2.1"
+pydantic = {extras = ["email"], version = "^2.6.3"}
+loguru = "^0.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
